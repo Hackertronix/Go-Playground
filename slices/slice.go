@@ -16,5 +16,6 @@ func main() {
 	r[1] = "hi"
 	r[2] = "wadup"
 
+	fmt.Println(r)
 	fmt.Println(r[0])
 }
