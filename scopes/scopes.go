@@ -18,6 +18,6 @@ func main() {
 func printSomething() {
 	fmt.Println("Inside printer function")
 	fmt.Println("Iron: ", iron)
-    //fmt.Println("Gold: ", gold)
+	//fmt.Println("Gold: ", gold)
 
 }

@@ -19,5 +19,4 @@ func main() {
 	fmt.Println(r)
 	fmt.Println(r[0])
 
-
 }
