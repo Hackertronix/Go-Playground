@@ -4,11 +4,13 @@ import "fmt"
 
 func main() {
 
-	add(8, 87, 90, 89, 11, 21)
+	r := add(8, 87, 90, 89, 11, 21)
+
+	fmt.Println(r)
 
 }
 
-func add(nums ...int) {
+func add(nums ...int) int {
 
 	var total int
 
@@ -17,4 +19,6 @@ func add(nums ...int) {
 	}
 
 	fmt.Println("Total is: ", total)
+
+	return total
 }
