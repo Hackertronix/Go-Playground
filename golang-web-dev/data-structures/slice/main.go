@@ -5,7 +5,7 @@ import (
 	"os"
 	"text/template"
 )
-
+8
 var tpl *template.Template
 
 func init() {
