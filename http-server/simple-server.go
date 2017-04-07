@@ -9,8 +9,9 @@ func main() {
 
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/earth", handlerEarth)
+	http.HandleFunc("/venus", handlerVenus)
 
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8000", nil)
 
 }
 
@@ -20,4 +21,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func handlerEarth(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello Earth")
+}
+
+func handlerVenus(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello Venus")
 }
