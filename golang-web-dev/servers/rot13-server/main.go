@@ -43,6 +43,7 @@ func handle(conn net.Conn) {
 
 }
 
+//rotates each individual letter by 13 characters
 func rot13(bs []byte) []byte {
 	var r13 = make([]byte, len(bs))
 	for i, v := range bs {
