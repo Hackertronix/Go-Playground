@@ -32,7 +32,7 @@ func handle(conn net.Conn) {
 
 	err := conn.SetDeadline(time.Now().Add(10 * time.Second))
 	if err != nil {
-		log.Fatalln("CONNECTION TIMED OUT")
+		log.Fatalln("connection timed out")
 	}
 
 	scanner := bufio.NewScanner(conn)
